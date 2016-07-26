@@ -1,16 +1,24 @@
 package com.weihuagu.cilisou;
 
+
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ListView;
 
 public class MainActivity extends Activity {
-
+    private Button search;
+    private EditText input;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		this.initUiResouces();
 	}
 
 	@Override
@@ -30,5 +38,23 @@ public class MainActivity extends Activity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+	public void initUiResouces(){
+		this.search=(Button)findViewById(R.id.serach);
+		this.input=(EditText)findViewById(R.id.input);
+		
+	}
+	public void serachClick(View v){
+		String value = this.input.getText().toString();  
+        //trim() 表示输入前后空格  
+        if(value == null || value.trim().equals("")){  
+            this.input.setError("请输入内容！");  
+            return;  
+        }else
+        {
+    	Intent startsearch=new Intent(MainActivity.this,SearchActivity.class);
+		startsearch.putExtra("searchkey",value );
+		MainActivity.this.startActivity(startsearch);
+        }
 	}
 }
