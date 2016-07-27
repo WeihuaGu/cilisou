@@ -48,5 +48,10 @@ public class BtanySearch implements ISearch {
 	            return null;
 	        }
 	}
+	public List<CiliInfo> getSearch(String key,int pagenum){
+		
+		return null;
+	}
+	
 
 }

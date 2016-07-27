@@ -1,6 +1,8 @@
 package com.weihuagu.cilisou;
 
+import java.util.List;
+
 public interface AsyncResponse {
-	void onDataReceivedSuccess(String[] accouts);
-   void onDataReceivedFailed();
+	public void onDataReceivedSuccess(List<CiliInfo> cililist);
+    public  void onDataReceivedFailed();
 }

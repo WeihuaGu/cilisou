@@ -1,8 +1,10 @@
 package com.weihuagu.cilisou;
 
+import java.util.List;
+
 import android.os.AsyncTask;
 
-public class SearchTask extends AsyncTask<Integer, Void, String[]> {
+public class SearchTask extends AsyncTask<String, Void, List<CiliInfo>> {
 	
 	 public AsyncResponse asyncResponse;    
      public void setOnAsyncResponse(AsyncResponse asyncResponse)
@@ -11,18 +13,20 @@ public class SearchTask extends AsyncTask<Integer, Void, String[]> {
      }
 
 	@Override
-	protected String[] doInBackground(Integer ... kindtype) {
+	protected List<CiliInfo> doInBackground(String ... key) {
 		// TODO Auto-generated method stub
-	   
-		return null;	
+	    String keyword = key[0];
+	    BtanySearch search=new BtanySearch();
+		List<CiliInfo> ciliList = search.getSearch(keyword);
+		return ciliList;	
 	}
 	
 	@Override
-    protected void onPostExecute(String[] accouts) {          
-        super.onPostExecute(accouts);       
-        if (accouts != null)
+    protected void onPostExecute(List<CiliInfo> cililist) {          
+        super.onPostExecute(cililist);       
+        if (cililist != null)
         {               
-            asyncResponse.onDataReceivedSuccess(accouts);//将结果传给回调接口中的函数
+            asyncResponse.onDataReceivedSuccess(cililist);//将结果传给回调接口中的函数
         }
         else {
             asyncResponse.onDataReceivedFailed();
