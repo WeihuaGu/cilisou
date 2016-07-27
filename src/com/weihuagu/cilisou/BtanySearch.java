@@ -12,14 +12,29 @@ import org.jsoup.select.Elements;
 import android.util.Log;
 
 public class BtanySearch implements ISearch {
-	
+	public int pagenum=4;
 	public String baseurl="http://www.btany.com/search/";
-
+    private List<CiliInfo> sumlist=null;
+   
 	@Override
 	public List<CiliInfo> getSearch(String key) {
 		// TODO Auto-generated method stub
+		List<CiliInfo> templist=null;
+		sumlist=new ArrayList<CiliInfo>();
+		for(int i=1;i<=this.pagenum;i++){
+			templist=getSearch(key,i);
+			if(templist!=null){
+				for(int j=0;j<templist.size();j++){
+					sumlist.add(templist.get(j));
+				}
+			}
+			
+		}
+		return sumlist;
+	}
+	public List<CiliInfo> getSearch(String key,int pagenum){
 		try {
-			String keyword=key+"-first-asc-1";
+			String keyword=key+"-first-asc-"+pagenum;
         	String pageUrl=this.baseurl+URLEncoder.encode(keyword, "UTF-8");
             Document doc = Jsoup.connect(pageUrl)
             		.userAgent("Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0") 
@@ -47,10 +62,7 @@ public class BtanySearch implements ISearch {
 	            e.printStackTrace();
 	            return null;
 	        }
-	}
-	public List<CiliInfo> getSearch(String key,int pagenum){
 		
-		return null;
 	}
 	
 
