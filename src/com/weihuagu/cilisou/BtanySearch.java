@@ -12,7 +12,7 @@ import org.jsoup.select.Elements;
 import android.util.Log;
 
 public class BtanySearch implements ISearch {
-	public int pagenum=4;
+	public int pagenum=10;
 	public String baseurl="http://www.btany.com/search/";
     private List<CiliInfo> sumlist=null;
    
