@@ -34,14 +34,5 @@
           android:layout_height="18dp"
           android:scaleType="fitXY"
     />
-    <com.weihuagu.cilisou.ThunterButton
-        android:id="@+id/thunter"
-        android:layout_width="18dp"
-          android:layout_height="18dp"
-        android:src="@drawable/thunder"
-        android:background="#00000000"
-        android:scaleType="fitXY"
-        android:gravity="end"
-         />
     </LinearLayout>
 </LinearLayout>

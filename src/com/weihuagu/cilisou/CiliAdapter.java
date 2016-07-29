@@ -2,14 +2,17 @@ package com.weihuagu.cilisou;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import android.content.ClipboardManager;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
 
-public class CiliAdapter extends BaseAdapter {
+public class CiliAdapter extends BaseAdapter implements View.OnClickListener{
 	private List<CiliInfo> ciliList=new ArrayList<CiliInfo>();
 	private Context mContext;
 	public void setContext(Context context){
@@ -49,7 +52,7 @@ public class CiliAdapter extends BaseAdapter {
           
              viewHolder.title = (TextView) view.findViewById(R.id.title);
              viewHolder.magnetbutton=(MagnetButton)view.findViewById(R.id.magnet);
-             viewHolder.thunterbutton=(ThunterButton)view.findViewById(R.id.thunter);
+          //   viewHolder.thunterbutton=(ThunterButton)view.findViewById(R.id.thunter);
              view.setTag(viewHolder);
          } else {
              viewHolder = (ViewHolder) view.getTag();
@@ -63,16 +66,32 @@ public class CiliAdapter extends BaseAdapter {
 		 }
 		 if(magnetlink!=null)
 			 viewHolder.magnetbutton.setLink(magnetlink);
-		 if(thunderlink!=null)
-			 viewHolder.thunterbutton.setLink(thunderlink);
+		     viewHolder.magnetbutton.setOnClickListener(this);
+		// if(thunderlink!=null)
+		//	 viewHolder.thunterbutton.setLink(thunderlink);
 		return view;
 	}
 	
 	
 	private  class ViewHolder {
 		TextView title;
-		MagnetButton magnetbutton;
-		ThunterButton thunterbutton;
+		CiliButton magnetbutton;
+		CiliButton thunterbutton;
     }
+
+
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		CiliButton button=(CiliButton)v;
+		String link=button.getLink();
+		ClipboardManager clip = (ClipboardManager)this.mContext.getSystemService(Context.CLIPBOARD_SERVICE);
+		clip.setText(link); // 复制
+		Toast toast=Toast.makeText(this.mContext, "链接已经复制到剪贴版", Toast.LENGTH_SHORT); 
+		if(clip.getText()!=null)
+		  toast.show();  
+		
+		
+	}
 
 }

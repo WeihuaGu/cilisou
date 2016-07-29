@@ -1,6 +1,4 @@
 package com.weihuagu.cilisou;
-
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -34,9 +32,13 @@ public class MainActivity extends Activity {
 		// automatically handle clicks on the Home/Up button, so long
 		// as you specify a parent activity in AndroidManifest.xml.
 		int id = item.getItemId();
-		if (id == R.id.action_settings) {
+		/**
+		if (id== R.id.action_about){
+			Intent startabout=new Intent(this,AboutActivity.class);
+			startActivity(startabout);
 			return true;
 		}
+		**/
 		return super.onOptionsItemSelected(item);
 	}
 	public void initUiResouces(){
