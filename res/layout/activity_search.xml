@@ -16,7 +16,9 @@
     <ListView 
           android:id="@+id/cililist"
           android:layout_width="wrap_content"
-          android:layout_height="wrap_content" >
+          android:layout_height="wrap_content" 
+          android:divider="#ffffff" 
+          android:dividerHeight="1px">
         
     </ListView>
   
