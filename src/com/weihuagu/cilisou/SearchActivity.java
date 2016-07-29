@@ -17,13 +17,15 @@ public class SearchActivity extends Activity implements AsyncResponse{
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_search);
-		this.getIntent();
+		this.getIntentData();
 		this.initUiResouces();
 		this.getCiliList(this.keyword);
 	}
 	public void getIntentData(){
 		Intent intent=getIntent();
 	    this.keyword=intent.getStringExtra("searchkey");
+	    Toast toast=Toast.makeText(this, "get the key words:"+this.keyword, Toast.LENGTH_SHORT); 
+		toast.show();    
      }
 	
 	public void initUiResouces(){
