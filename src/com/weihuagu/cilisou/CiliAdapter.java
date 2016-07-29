@@ -46,23 +46,33 @@ public class CiliAdapter extends BaseAdapter {
 		 if (arg1 == null) {
              view = LayoutInflater.from(mContext).inflate(R.layout.listview_row_item, parent, false);
              viewHolder = new ViewHolder();
-            // viewHolder.iv_img = (MyImageView ) view.findViewById(R.id.img);
+          
              viewHolder.title = (TextView) view.findViewById(R.id.title);
+             viewHolder.magnetbutton=(MagnetButton)view.findViewById(R.id.magnet);
+             viewHolder.thunterbutton=(ThunterButton)view.findViewById(R.id.thunter);
              view.setTag(viewHolder);
          } else {
              viewHolder = (ViewHolder) view.getTag();
          }
 		 CiliInfo cili=this.ciliList.get(position);
-		 String cilititle=cili.getMagnet();
+		 String cilititle=cili.getTitle();
+		 String magnetlink=cili.getMagnet();
+		 String thunderlink=cili.getThunder();
 		 if(cilititle!=null){
 			 viewHolder.title.setText(cilititle);
 		 }
+		 if(magnetlink!=null)
+			 viewHolder.magnetbutton.setLink(magnetlink);
+		 if(thunderlink!=null)
+			 viewHolder.thunterbutton.setLink(thunderlink);
 		return view;
 	}
 	
 	
 	private  class ViewHolder {
 		TextView title;
+		MagnetButton magnetbutton;
+		ThunterButton thunterbutton;
     }
 
 }

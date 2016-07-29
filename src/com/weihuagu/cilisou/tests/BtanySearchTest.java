@@ -20,7 +20,7 @@ public class BtanySearchTest extends TestCase {
 	@Test
 	public void testGetSearch(){
 		BtanySearch search=new BtanySearch();
-		List<CiliInfo> ciliList = search.getSearch("无码 美女");
+		List<CiliInfo> ciliList = search.getSearch("美女");
 		assertNotNull(ciliList);
 		for(int i=0;i<ciliList.size();i++){
 			System.out.println(ciliList.get(i).getTitle());

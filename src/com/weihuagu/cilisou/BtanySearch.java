@@ -12,7 +12,7 @@ import org.jsoup.select.Elements;
 import android.util.Log;
 
 public class BtanySearch implements ISearch {
-	public int pagenum=10;
+	public int pagenum=6;
 	public String baseurl="http://www.btany.com/search/";
     private List<CiliInfo> sumlist=null;
    
@@ -54,6 +54,7 @@ public class BtanySearch implements ISearch {
                String itemmagnet=url.select("div.item-bar").select("a.download[href^=magnet]").attr("href");
                ciliInfo.setMagnet(itemmagnet);
                String itemthender=url.select("div.item-bar").select("a.download[href^=thunder]").attr("href");
+               ciliInfo.setThunder(itemthender);
                 ciliList.add(ciliInfo);
             }
             return ciliList;
