@@ -2,9 +2,12 @@ package com.weihuagu.cilisou;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import com.baidu.appx.BDBannerAd;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -24,7 +27,7 @@ public class SearchActivity extends Activity implements AsyncResponse{
 	public void getIntentData(){
 		Intent intent=getIntent();
 	    this.keyword=intent.getStringExtra("searchkey");
-	    Toast toast=Toast.makeText(this, "get the key words:"+this.keyword, Toast.LENGTH_SHORT); 
+	    Toast toast=Toast.makeText(this, "搜索需要一定时间，请耐心等待"+this.keyword, Toast.LENGTH_SHORT); 
 		toast.show();    
      }
 	
@@ -54,14 +57,31 @@ public class SearchActivity extends Activity implements AsyncResponse{
 			this.mAdapter.setContext(getBaseContext());
 			this.mAdapter.addCiliList(this.ciliList);
 			this.cililistview.setAdapter(this.mAdapter);
-	  }
+	   }
+		this.showBanner();
 		
 	}
 	@Override
 	public void onDataReceivedFailed() {
 		// TODO Auto-generated method stub
 		Toast toast=Toast.makeText(this, "接受数据失败了", Toast.LENGTH_SHORT); 
-		toast.show();             
+		toast.show();       
+		this.showBanner();
 	}
+	
+	//ad
+		private BDBannerAd	bannerview;
+		public void showBanner() {
+	    	if (null == bannerview) {
+				bannerview = new BDBannerAd(this, "2VZi6j25GkVpv6aogq2ljGTbwoxWjNLy", "pmdjagmZGY62gvfeaoKnNmZS");
+				bannerview.setAdSize(BDBannerAd.SIZE_FLEXIBLE);
+				bannerview.setAdListener(new AdListener("Banner"));
+				ViewGroup  container = (ViewGroup)findViewById(R.id.adview_container);
+				container.addView(bannerview);
+			}
+	    	else {
+	    		System.out.println("---- bannerAd is showing, should hide first");
+	    	}
+	    }
 
 }

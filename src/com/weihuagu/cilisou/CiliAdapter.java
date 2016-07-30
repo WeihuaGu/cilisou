@@ -52,7 +52,7 @@ public class CiliAdapter extends BaseAdapter implements View.OnClickListener{
           
              viewHolder.title = (TextView) view.findViewById(R.id.title);
              viewHolder.magnetbutton=(MagnetButton)view.findViewById(R.id.magnet);
-          //   viewHolder.thunterbutton=(ThunterButton)view.findViewById(R.id.thunter);
+             viewHolder.thunterbutton=(ThunderButton)view.findViewById(R.id.thunder);
              view.setTag(viewHolder);
          } else {
              viewHolder = (ViewHolder) view.getTag();
@@ -64,11 +64,14 @@ public class CiliAdapter extends BaseAdapter implements View.OnClickListener{
 		 if(cilititle!=null){
 			 viewHolder.title.setText(cilititle);
 		 }
-		 if(magnetlink!=null)
+		 if(magnetlink!=null){
 			 viewHolder.magnetbutton.setLink(magnetlink);
 		     viewHolder.magnetbutton.setOnClickListener(this);
-		// if(thunderlink!=null)
-		//	 viewHolder.thunterbutton.setLink(thunderlink);
+		 }
+		 if(thunderlink!=null){
+			 viewHolder.thunterbutton.setLink(thunderlink);
+		     viewHolder.thunterbutton.setOnClickListener(this);
+		 }
 		return view;
 	}
 	
@@ -90,6 +93,13 @@ public class CiliAdapter extends BaseAdapter implements View.OnClickListener{
 		Toast toast=Toast.makeText(this.mContext, "链接已经复制到剪贴版", Toast.LENGTH_SHORT); 
 		if(clip.getText()!=null)
 		  toast.show();  
+		if(button.linktype()=="magnet"){
+			Toast magnetsource=Toast.makeText(this.mContext, "磁力链接不行的化，试试迅雷链接", Toast.LENGTH_SHORT);     
+			magnetsource.show();
+		}else{
+			Toast thundersource=Toast.makeText(this.mContext, "迅雷链接不行的化，试试磁力链接", Toast.LENGTH_SHORT);     
+			thundersource.show();
+		}
 		
 		
 	}

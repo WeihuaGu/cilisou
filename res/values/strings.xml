@@ -10,7 +10,7 @@
     <string name="about_feedback">你可以在我的邮箱反馈：weihuagu_work@163.com.</string>
     <string name="appPkg"></string>
     <string name="load">抓取过程需要一些时间,如果没有提示抓取失败，请耐心等待</string>
-    <string name="iconattribution"></string>
+    <string name="iconattribution">Icon made by Freepik from www.flaticon.com</string>
     <string name="SDK_APP_KEY"></string>
     <string name="SDK_BANNER_AD_ID"></string>
 </resources>
