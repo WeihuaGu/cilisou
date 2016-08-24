@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/root/AndroidStudioProjects/cilisou/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="68326dc6aefac64383d3f9804bd6e44c95be9148">
+        <dex dex="/root/AndroidStudioProjects/cilisou/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_0b546beb5c02d292f068f32d078c656f502240f6/classes.dex" />
+    </item>
+    <item
+        jar="/root/AndroidStudioProjects/cilisou/app/libs/jsoup-1.9.2.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="edb0ddf3bd59dec0947f6eda75b6cf2264fc5e4b">
+        <dex dex="/root/AndroidStudioProjects/cilisou/app/build/intermediates/pre-dexed/release/jsoup-1.9.2_a4dc66d1e83dd6fedddc43f7a57c199c8770ecbc.jar" />
+    </item>
+    <item
+        jar="/root/.gradle/caches/modules-2/files-2.1/junit/junit/4.0/53867ff28a9bd2b05ed2ea6e278f8f6439576e84/junit-4.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="53867ff28a9bd2b05ed2ea6e278f8f6439576e84">
+        <dex dex="/root/AndroidStudioProjects/cilisou/app/build/intermediates/pre-dexed/release/junit-4.0_b65775a9021382a349d0117942915a2e31ef46ec.jar" />
+    </item>
+    <item
+        jar="/root/.gradle/caches/modules-2/files-2.1/junit/junit/4.0/53867ff28a9bd2b05ed2ea6e278f8f6439576e84/junit-4.0.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="53867ff28a9bd2b05ed2ea6e278f8f6439576e84">
+        <dex dex="/root/AndroidStudioProjects/cilisou/app/build/intermediates/transforms/dex/debug/folders/1000/10/junit-4.0_b65775a9021382a349d0117942915a2e31ef46ec/classes.dex" />
+    </item>
+    <item
+        jar="/root/AndroidStudioProjects/cilisou/app/libs/jsoup-1.9.2.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="edb0ddf3bd59dec0947f6eda75b6cf2264fc5e4b">
+        <dex dex="/root/AndroidStudioProjects/cilisou/app/build/intermediates/transforms/dex/debug/folders/1000/2/jsoup-1.9.2_a4dc66d1e83dd6fedddc43f7a57c199c8770ecbc/classes.dex" />
+    </item>
+    <item
+        jar="/root/AndroidStudioProjects/cilisou/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="c03ed57cedad3ab8740ee14f532c2267e29933a7">
+        <dex dex="/root/AndroidStudioProjects/cilisou/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_ab4500a6c4d0301305e82e3f01dde0b82283410a/classes.dex" />
+    </item>
+
+</items>

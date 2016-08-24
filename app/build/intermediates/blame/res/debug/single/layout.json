@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/root/AndroidStudioProjects/cilisou/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
+        "source": "/root/AndroidStudioProjects/cilisou/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/cilisou/app/build/intermediates/res/merged/debug/layout/activity_about.xml",
+        "source": "/root/AndroidStudioProjects/cilisou/app/src/main/res/layout/activity_about.xml"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/cilisou/app/build/intermediates/res/merged/debug/layout/listview_row_item.xml",
+        "source": "/root/AndroidStudioProjects/cilisou/app/src/main/res/layout/listview_row_item.xml"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/cilisou/app/build/intermediates/res/merged/debug/layout/activity_search.xml",
+        "source": "/root/AndroidStudioProjects/cilisou/app/src/main/res/layout/activity_search.xml"
+    }
+]

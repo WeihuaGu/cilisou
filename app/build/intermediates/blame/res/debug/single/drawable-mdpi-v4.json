@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/root/AndroidStudioProjects/cilisou/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/ic_launcher.png",
+        "source": "/root/AndroidStudioProjects/cilisou/app/src/main/res/drawable-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/cilisou/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/icon.png",
+        "source": "/root/AndroidStudioProjects/cilisou/app/src/main/res/drawable-mdpi/icon.png"
+    }
+]
