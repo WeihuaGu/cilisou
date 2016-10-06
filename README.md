@@ -13,6 +13,6 @@ you can download the apk file from release.
 Some links can use Baidu and SkyDrive offline desktop version of the thunder can download, but I do not know why the mobile phone version of thunder down.
 ##分支(branch)
 master是eclipse版的
-thie master branch is for eclipse.
+the master branch is for eclipse.
 studio是android studio版的
 the studio branch is for android studio.
