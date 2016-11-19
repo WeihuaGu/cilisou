@@ -17,6 +17,6 @@ the master branch is for eclipse.
 studio是android studio版的
 the studio branch is for android studio.
 ##截图
-![](https://gdown.baidu.com/img/0/1080_1920/daa5bfd5fd9b9529af854bbbf976a795.png)
+![search](http://gdown.baidu.com/img/0/1080_1920/daa5bfd5fd9b9529af854bbbf976a795.png)
 
-![](https://gdown.baidu.com/img/0/1080_1920/f6149091da613c262beb68ff8316a10f.png)
+![show](https://gdown.baidu.com/img/0/1080_1920/f6149091da613c262beb68ff8316a10f.png)
