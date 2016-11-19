@@ -20,3 +20,9 @@ the studio branch is for android studio.
 ![search](http://gdown.baidu.com/img/0/1080_1920/daa5bfd5fd9b9529af854bbbf976a795.png)
 
 ![show](https://gdown.baidu.com/img/0/1080_1920/f6149091da613c262beb68ff8316a10f.png)
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
