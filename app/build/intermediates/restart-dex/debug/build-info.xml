@@ -1,32 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="armeabi-v7a,armeabi"
-    api-level="23"
-    density="xxhdpi"
+    abi="arm64-v8a,armeabi-v7a,armeabi"
+    api-level="25"
     format="7"
-    timestamp="291189275027"
-    token="-3321062883952862253" >
+    timestamp="24294307701530"
+    token="1128983202711632255" >
 
     <task
         name="javac"
-        duration="2155" />
+        duration="1673" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="369" />
+        duration="404" />
     <task
         name="verifier"
-        duration="20" />
+        duration="6" />
 
     <artifact
-        location="/root/AndroidStudioProjects/cilisou/app/build/outputs/apk/app-debug.apk"
+        location="/home/better/project/cilisou/app/build/outputs/apk/app-debug.apk"
         type="MAIN" />
 
-    <build timestamp="291189275027" >
+    <build timestamp="24294307701530" >
         <artifact
-            location="/root/AndroidStudioProjects/cilisou/app/build/outputs/apk/app-debug.apk"
+            location="/home/better/project/cilisou/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
 

@@ -4,6 +4,8 @@ import java.util.List;
 
 import android.os.AsyncTask;
 
+import com.weihuagu.cilisou.tests.AiciliSearch;
+
 public class SearchTask extends AsyncTask<String, Void, List<CiliInfo>> {
 	
 	 public AsyncResponse asyncResponse;    
@@ -16,7 +18,9 @@ public class SearchTask extends AsyncTask<String, Void, List<CiliInfo>> {
 	protected List<CiliInfo> doInBackground(String ... key) {
 		// TODO Auto-generated method stub
 	    String keyword = key[0];
-	    BtanySearch search=new BtanySearch();
+
+        // BtanySearch search=new BtanySearch();
+        AiciliSearch search=new AiciliSearch();
 		List<CiliInfo> ciliList = search.getSearch(keyword);
 		return ciliList;	
 	}

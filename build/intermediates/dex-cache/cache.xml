@@ -2,6 +2,13 @@
 <items version="2" >
 
     <item
+        jar="/home/better/project/cilisou/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="95a9bdda3f167c9f601cc1494b842279a4707f46">
+        <dex dex="/home/better/project/cilisou/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_f760fc0e7208d41b0ea8b4d5d9c4477e45350ad5/classes.dex" />
+    </item>
+    <item
         jar="/root/AndroidStudioProjects/cilisou/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         revision="23.0.1"
@@ -9,18 +16,18 @@
         <dex dex="/root/AndroidStudioProjects/cilisou/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_0b546beb5c02d292f068f32d078c656f502240f6/classes.dex" />
     </item>
     <item
-        jar="/root/AndroidStudioProjects/cilisou/app/libs/jsoup-1.9.2.jar"
-        jumboMode="false"
+        jar="/home/better/project/cilisou/app/libs/jsoup-1.9.2.jar"
+        jumboMode="true"
         revision="23.0.1"
         sha1="edb0ddf3bd59dec0947f6eda75b6cf2264fc5e4b">
-        <dex dex="/root/AndroidStudioProjects/cilisou/app/build/intermediates/pre-dexed/release/jsoup-1.9.2_a4dc66d1e83dd6fedddc43f7a57c199c8770ecbc.jar" />
+        <dex dex="/home/better/project/cilisou/app/build/intermediates/transforms/dex/debug/folders/1000/2/jsoup-1.9.2_149ed6219b891d076c1612adf42412cb0bb9f89d/classes.dex" />
     </item>
     <item
-        jar="/root/.gradle/caches/modules-2/files-2.1/junit/junit/4.0/53867ff28a9bd2b05ed2ea6e278f8f6439576e84/junit-4.0.jar"
-        jumboMode="false"
+        jar="/home/better/project/cilisou/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
         revision="23.0.1"
-        sha1="53867ff28a9bd2b05ed2ea6e278f8f6439576e84">
-        <dex dex="/root/AndroidStudioProjects/cilisou/app/build/intermediates/pre-dexed/release/junit-4.0_b65775a9021382a349d0117942915a2e31ef46ec.jar" />
+        sha1="29c8eb8f82b2d6d242ef63cc623a3fd88e24b409">
+        <dex dex="/home/better/project/cilisou/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_9bda38f689e060119c28455523ca751a8be0e583/classes.dex" />
     </item>
     <item
         jar="/root/.gradle/caches/modules-2/files-2.1/junit/junit/4.0/53867ff28a9bd2b05ed2ea6e278f8f6439576e84/junit-4.0.jar"
