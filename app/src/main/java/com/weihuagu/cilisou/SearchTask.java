@@ -19,8 +19,7 @@ public class SearchTask extends AsyncTask<String, Void, List<CiliInfo>> {
 		// TODO Auto-generated method stub
 	    String keyword = key[0];
 
-        // BtanySearch search=new BtanySearch();
-        AiciliSearch search=new AiciliSearch();
+        TorrentkittySearch search =new TorrentkittySearch();
 		List<CiliInfo> ciliList = search.getSearch(keyword);
 		return ciliList;	
 	}
