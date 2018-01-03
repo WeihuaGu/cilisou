@@ -1,10 +1,10 @@
 [
     {
-        "merged": "/home/better/project/cilisou/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/icon.png",
-        "source": "/home/better/project/cilisou/app/src/main/res/drawable-xhdpi/icon.png"
+        "merged": "/home/happ/project/github/cilisou/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_launcher.png",
+        "source": "/home/happ/project/github/cilisou/app/src/main/res/drawable-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "/home/better/project/cilisou/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_launcher.png",
-        "source": "/home/better/project/cilisou/app/src/main/res/drawable-xhdpi/ic_launcher.png"
+        "merged": "/home/happ/project/github/cilisou/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/icon.png",
+        "source": "/home/happ/project/github/cilisou/app/src/main/res/drawable-xhdpi/icon.png"
     }
 ]

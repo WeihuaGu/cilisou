@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/home/better/project/cilisou/app/build/intermediates/res/merged/debug/values-w820dp-v13/values-w820dp-v13.xml",
+        "outputFile": "/home/happ/project/github/cilisou/app/build/intermediates/res/merged/debug/values-w820dp-v13/values-w820dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 108
                 },
                 "from": {
-                    "file": "/home/better/project/cilisou/app/src/main/res/values-w820dp/dimens.xml",
+                    "file": "/home/happ/project/github/cilisou/app/src/main/res/values-w820dp/dimens.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,

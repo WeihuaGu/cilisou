@@ -19,18 +19,21 @@ import com.weihuagu.cilisou.CiliInfo;
  */
 public class TorrentkittySearchTest {
 
+    /**
+
     @Test
     public void testgetPageNum() throws Exception {
         TorrentkittySearch search=new TorrentkittySearch();
-        System.out.println(search.getPageNum("美女 无码"));
+        System.out.println(search.getPageNum("惊变"));
 
 
     }
 
+   **/
     @Test
     public void testGetSearch() throws Exception {
         TorrentkittySearch search=new TorrentkittySearch();
-        List<CiliInfo> ciliList = search.getSearch("美女 无码",1);
+        List<CiliInfo> ciliList = search.getSearch("美女");
         assertNotNull(ciliList);
         for(int i=0;i<ciliList.size();i++){
             System.out.println(ciliList.get(i).getTitle());

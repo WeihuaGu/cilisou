@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/home/better/project/cilisou/app/src/androidTest/assets"/><source path="/home/better/project/cilisou/app/build/generated/assets/shaders/androidTest/debug"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/home/happ/project/github/cilisou/app/src/androidTest/assets"/><source path="/home/happ/project/github/cilisou/app/build/generated/assets/shaders/androidTest/debug"/></dataSet></merger>
